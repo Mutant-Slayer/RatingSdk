@@ -1,2 +1,6 @@
 jdk:
   - openjdk17
+before_install:
+  - echo "Nothing"
+install:
+  - ./gradlew :ratingSdk:publishToMavenLocal
