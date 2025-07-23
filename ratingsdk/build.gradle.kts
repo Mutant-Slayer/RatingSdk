@@ -65,7 +65,7 @@ publishing {
                 from(components["release"])
                 groupId = "com.github.Mutant-Slayer"
                 artifactId = "ratingSdk"
-                version = "1.0.7"
+                version = "1.0.8"
             }
         }
     }
