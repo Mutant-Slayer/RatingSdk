@@ -63,7 +63,7 @@ publishing {
         create<MavenPublication>("release") {
             groupId = "com.github.Mutant-Slayer"
             artifactId = "ratingSdk"
-            version = "1.0.3"
+            version = "1.0.5"
             afterEvaluate {
                 from(components["release"])
             }
