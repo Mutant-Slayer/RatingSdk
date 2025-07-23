@@ -4,3 +4,4 @@ before_install:
   - echo "Nothing"
 install:
   - ./gradlew :ratingSdk:publishToMavenLocal
+  - ./gradlew :ratingSdk:tasks --all
