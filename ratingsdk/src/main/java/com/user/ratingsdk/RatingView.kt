@@ -20,7 +20,7 @@ import androidx.compose.ui.unit.dp
 import kotlin.math.ceil
 
 @Composable
-fun StarRatingView(
+fun RatingView(
     modifier: Modifier = Modifier,
     rating: Float,
     onRatingChanged: (newRating: Float) -> Unit = {},
@@ -126,3 +126,6 @@ fun UnratedStarContent(modifier: Modifier = Modifier, maxRating: Int) {
         }
     }
 }
+
+
+

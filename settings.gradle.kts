@@ -22,4 +22,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Rating"
 include(":app")
-include(":ratingsdk")
+include(":ratingSdk")
