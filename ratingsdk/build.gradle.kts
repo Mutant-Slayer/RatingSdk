@@ -2,7 +2,7 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.compose.compiler)
-    alias(libs.plugins.maven.publish)
+    id("maven-publish")
 }
 
 android {
@@ -35,6 +35,12 @@ android {
     buildFeatures {
         compose = true
     }
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
 }
 
 dependencies {
@@ -57,7 +63,7 @@ publishing {
         create<MavenPublication>("release") {
             groupId = "com.github.Mutant-Slayer"
             artifactId = "ratingSdk"
-            version = "1.0.0"
+            version = "1.0.3"
             afterEvaluate {
                 from(components["release"])
             }
