@@ -58,14 +58,14 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            create<MavenPublication>("release") {
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            afterEvaluate {
+                from(components["release"])
                 groupId = "com.github.Mutant-Slayer"
                 artifactId = "ratingSdk"
-                version = "1.0.6"
-                from(components["release"])
+                version = "1.0.7"
             }
         }
     }
