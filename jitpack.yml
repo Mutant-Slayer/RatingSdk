@@ -2,6 +2,7 @@ jdk:
   - openjdk17
 before_install:
   - echo "Nothing"
+  - ./scripts/prepareJitpackEnvironment.sh
 install:
   - ./gradlew :ratingSdk:publishToMavenLocal
   - ./gradlew :ratingSdk:tasks --all
