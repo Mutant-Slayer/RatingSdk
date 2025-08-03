@@ -92,7 +92,7 @@ fun RatingView(
 }
 
 @Composable
-fun RatedStarContent(modifier: Modifier = Modifier, maxRating: Int) {
+private fun RatedStarContent(modifier: Modifier = Modifier, maxRating: Int) {
     Row(
         modifier = modifier,
         verticalAlignment = Alignment.CenterVertically,
@@ -110,7 +110,7 @@ fun RatedStarContent(modifier: Modifier = Modifier, maxRating: Int) {
 }
 
 @Composable
-fun UnratedStarContent(modifier: Modifier = Modifier, maxRating: Int) {
+private fun UnratedStarContent(modifier: Modifier = Modifier, maxRating: Int) {
     Row(
         modifier = modifier,
         verticalAlignment = Alignment.CenterVertically,
